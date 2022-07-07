@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies Website</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .navbar {
+        background-color: black;
+        color: aliceblue;
+        height: 50px;
+      }
+      .logo {
+        margin-left: 30px;
+        margin-top: 5px;
+        font-family: "Rubik Moonrocks", cursive;
+        font-size: 31px;
+        color: rgb(255, 42, 42);
+        display: inline-block;
+      }
+
+      .right {
+        float: right;
+        margin-right: 50px;
+        margin-top: 6px;
+        font-size: 15px;
+      }
+      .navbar li {
+        list-style: none;
+        display: inline-block;
+      }
+      .navbar li a {
+        text-decoration: none;
+        color: white;
+        margin-right: 10px;
+      }
+      .navbar li a:hover {
+        color: red;
+      }
+      .join_now {
+        padding: 9px 20px 9px 20px;
+        background-color: red;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .join_now:hover {
+        color: red;
+        background-color: white;
+      }
+      .sign_in {
+        margin-left: 10px;
+        padding: 9px 20px 9px 20px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        color: white;
+        font-size: 16px;
+        border: 1px solid white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .sign_in:hover {
+        background-color: white;
+        color: black;
+      }
+      .movie_banner img {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        /* margin-top: 18px; */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .left_side {
+        width: 41vw;
+        height: 100vh;
+        background-color: rgb(0, 0, 0, 0.65);
+      }
+      .movie_name {
+        margin-top: 70px;
+        margin-left: 50px;
+        width: 450px;
+        height: 200px;
+      }
+      .h1_movie_name {
+        margin-top: 40px;
+        margin-left: 50px;
+        color: white;
+      }
+      .information {
+        margin-top: 15px;
+        margin-left: 50px;
+        color: #a3a3a3;
+      }
+      .maturity-number {
+        border: 1px solid #a3a3a3;
+      }
+      .description {
+        margin-top: 25px;
+        margin-left: 50px;
+        color: white;
+      }
+      #stars_p {
+        margin-top: 15px;
+        margin-left: 49px;
+        color: white;
+      }
+      .stars {
+        color: #a3a3a3;
+      }
+      .play_btn {
+        margin-top: 8px;
+        margin-left: 384px;
+        padding: 9px 20px 9px 20px;
+        background-color: red;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 47px;
+      }
+      .play_btn:hover{
+        background-color: white;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dektop">
+      <div class="navbar">
+        <div class="logo">MOVIEBUCKET</div>
+        <div class="right">
+          <li><a href="#">UNLIMITED TV SHOWS & MOVIES</a></li>
+          <button class="join_now">JOIN NOW</button>
+          <button class="sign_in">SIGN IN</button>
+        </div>
+      </div>
+      <div class="movie_banner">
+        <img
+          src="https://occ-0-1963-2164.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXD7NkdYF6ysn-dSMKaWhLIUX2Kbm1KJdTbDKh679kPwUMuTWYNrFz_Nh3EvvyXi4Zuiz9WXMTHPPk49o3EqRRF1kS7QybxJNsL9.jpg?r=d6c"
+          alt="movie_banner"
+        />
+      </div>
+      <div class="left_side">
+        <div class="inside_left_side">
+          <img
+            class="movie_name"
+            src="https://occ-0-1963-2164.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABbbPyihleDdv08SR3suikeiNyrC1r2EtsrpkOz54BFBHEWYErBZ1sLgrL9brD1RCM3RUcixVl8u5VR_ZXCtTgY7IbR_LB0Sde4umIjDfLG2M.png?r=e2e"
+            alt="movie_name"
+          />
+
+          <h1 class="h1_movie_name">Venom: Let There Be Carnage</h1>
+          <div class="information">
+            <span class="release_date">2021 | </span>
+            <span class="maturity-number"> U/A 13+</span>
+            <span class="duration"> | 1h 37m | </span>
+            <span class="type_of_movie"> Action & Adventure</span>
+          </div>
+          <div class="description">
+            While Eddie Brock and Venom try to navigate their thorny
+            relationship, <br />
+            a new threat rises from serial killer Cletus Kasady and a new alien
+            <br />
+            symbiote.
+          </div>
+
+          <p id="stars_p">
+            <span class="stars">Starring:</span> Tom Hardy,Woody
+            Harrelson,Michelle Williams.
+          </p>
+
+          <button class="play_btn">Play</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
